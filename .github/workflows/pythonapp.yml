@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "mksbnn" --password-stdin
-        docker image build -t docker pull mksbnn/cloudguru:hellov1.0 .
+        docker image build -t mksbnn/cloudguru:hellov1.0 .
         docker push mksbnn/cloudguru:hellov1.0
